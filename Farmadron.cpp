@@ -2,7 +2,7 @@
 * NOMBRE: #Fernando#
 * PRIMER APELLIDO: #Garcia-Mascaraque#
 * SEGUNDO APELLIDO: #Santillana#
-* DNI: #50878079#
+* DNI: 
 * EMAIL: #fergms1988@gmail.com#
 *******************************************/
 
@@ -17,12 +17,12 @@ typedef int TipoDiasConPedidos[31];
 
 TipoDiasConPedidos DiasConPedidos;
 
-/* Busca el último registro paciente */
+/* Busca el Ãºltimo registro paciente */
 
 int TipoPaciente::BuscarRegistro( int & numReg) {
   int indice = 0 ;
 
-/* recorremos toda el vector hasta encontrar el último número de paciente asignado*/
+/* recorremos toda el vector hasta encontrar el Ãºltimo nÃºmero de paciente asignado*/
 
   while ( indice <= 20) {
 
@@ -37,12 +37,12 @@ int TipoPaciente::BuscarRegistro( int & numReg) {
   return ( numReg );
 }
 
-/*  Busca el ultimo registro pedido del vector para la numeración   */
+/*  Busca el ultimo registro pedido del vector para la numeraciÃ³n   */
 
 int TipoPaciente::BuscarPedido( int & findReg) {
   int ind0 = 0 ;
 
-  while ( ind0 <= 100) {   /* recorremos toda el vector hasta encontrar el último número de pedido asignado*/
+  while ( ind0 <= 100) {   /* recorremos toda el vector hasta encontrar el Ãºltimo nÃºmero de pedido asignado*/
 
 
     if (datoPedido[ind0].registroPedido == (ind0 + 1)) {
@@ -76,11 +76,11 @@ int TipoPaciente::NumPedido( int & numpedido) {
   return( numpedido ) ;
 }
 
-/*  Funcion para detectar si la fecha es correcta de acuerdo con los formatos y dia/mes/año  */
+/*  Funcion para detectar si la fecha es correcta de acuerdo con los formatos y dia/mes/aÃ±o  */
 
 int TipoPaciente::FechaAcertada(int & newDia, int newMes, int newAnio) {
 
-  /* Función para calcular el número de días de cada mes y  en función del año bisiesto */
+  /* FunciÃ³n para calcular el nÃºmero de dÃ­as de cada mes y  en funciÃ³n del aÃ±o bisiesto */
 
   switch (newMes) {
   case 1:
@@ -116,7 +116,7 @@ int TipoPaciente::FechaAcertada(int & newDia, int newMes, int newAnio) {
 
 void TipoPaciente::FechasEnvio( int contEnvios ) {
 
-  /* Función para introducir analizar los errores de tecla del usuario y que las fechas tengan los formatos correctos */
+  /* FunciÃ³n para introducir analizar los errores de tecla del usuario y que las fechas tengan los formatos correctos */
 
   int dia2, mes2, anio2, newDia, newMes, newAnio, frecuencia, ind0, ind1, ind2;
   bool pruebaFecha = true;
@@ -523,7 +523,7 @@ void TipoPaciente::ListaPedidos() {
 
 }
 
-/*  Menú Principal  */
+/*  MenÃº Principal  */
 
 int TipoPaciente::MenuPrincipal() {
   char tecla = 'X';
